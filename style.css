@@ -42,6 +42,7 @@ body{
 }
 .pricing{
     display: flex;
+    color: #fff;
 }
 .pricing .price{
     background-color: var(--Cyan);
