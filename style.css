@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Light-Gray);
+}
+.child{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.header{
+    background-color: #fff;
+    padding: 40px;
+}
+.header h1{
+    color: var(--Cyan);
+}
+.header h2{
+    color: var(--Bright-Yellow);
+}
+.header p{
+    color: var(--Grayish-Blue);
+}
+.pricing{
+    display: flex;
+}
+.pricing .price{
+    background-color: var(--Cyan);
+    padding: 30px 40px;
+    flex-grow: 1;
+    color: var(--Light-Gray);
+}
+.pricing .price div{
+    display: flex;
+    align-items: baseline;
+}
+.pricing .price h2{
+    display: inline;
+    margin-right: 10px;
+    font-size: 30px;
+    color: #ffffff;
+}
+.pricing .price span{
+    color: var(--Light-Gray);
+}
+.pricing .price a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--Bright-Yellow);
+    color: #ffffff;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 7px;
+    margin-top: 20px;
+    box-shadow: 1px 3px 10px grey;
+}
+.pricing .info{
+    background-color: hsl(179, 62%, 49%);
+    padding: 30px 40px;
+    flex-grow: 1;
+    color: var(--Light-Gray);
+    line-height: 23px;
+}
+.pricing .info h3{
+    font-weight: 700;
+}
+@media screen and (max-width:400px) {
+    .child{
+        flex-direction: column;
+        margin: 40px 20px;
+    }
+    .pricing{
+        flex-direction: column;
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
